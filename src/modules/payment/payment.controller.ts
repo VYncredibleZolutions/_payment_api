@@ -24,5 +24,4 @@ export class PaymentController {
         res.status(HttpStatus.CREATED);
         res.send(response.data);
     }
-
 }

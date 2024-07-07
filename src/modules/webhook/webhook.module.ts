@@ -1,15 +1,10 @@
 import { Module } from '@nestjs/common';
 import { StripeApiService } from 'src/api/stripe.api';
-import { PaymentController } from './payment.controller';
-import { PaymentService } from './payment.service';
+import { WebhookController } from './webhook.controller';
 
 @Module({
-  imports: [],
-  controllers: [
-    PaymentController
-  ],
+  controllers: [WebhookController],
   providers: [
-    PaymentService,
     {
       provide: StripeApiService,
       useFactory: () => {
@@ -22,4 +17,4 @@ import { PaymentService } from './payment.service';
     }
   ]
 })
-export class PaymentModule { }
+export class WebhookModule { }
