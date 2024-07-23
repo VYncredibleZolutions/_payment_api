@@ -11,7 +11,7 @@ services:
 
   stripe-cli:
     image: stripe/stripe-cli:latest
-    command: listen --api-key sk_test_51PZuqp2LM7f5OcY9hZbAcpHvNqZ0ss71Ral8ExxTqLdfvrL5yhpiJA28urmfAleFgBHGpQA66Eiqw9N2buB87yoi001TZQOS3s --forward-to http://host.docker.internal:3000/webhook --device-name pc-local
+    command: listen --api-key sk_test_51PZuqp2LM7f5OcY9hZbAcpHvNqZ0ss71Ral8ExxTqLdfvrL5yhpiJA28urmfAleFgBHGpQA66Eiqw9N2buB87yoi001TZQOS3s --forward-to http://host.docker.internal:3000/webhook --device-name pc-local-w
     network_mode: host
 
 networks:
